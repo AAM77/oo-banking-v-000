@@ -21,8 +21,8 @@ class Transfer
   def execute_transaction
 
     if self.status == "pending"
-      if @sender.valid? == false || nil
-        
+      if @sender.valid? == false || @sender.valid? == nil
+
         self.status = "Transaction rejected. Please check your account balance."
 
       elsif @sender.valid? == true
