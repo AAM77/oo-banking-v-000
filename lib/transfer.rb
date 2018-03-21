@@ -23,7 +23,7 @@ class Transfer
     if @sender.valid? == true
 
       @receiver.deposit(@amount)
-      @sender.balance = @sender.balance - amount
+      @sender.balance = @sender.balance - @amount
 
       self.status = "complete"
     else
