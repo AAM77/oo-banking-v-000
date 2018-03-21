@@ -26,11 +26,11 @@ class Transfer
       @receiver.deposit(amount)
       @sender.balance = @sender.balance - amount
 
-      @status = "complete"
+      self.status = "complete"
     end
   end
 
   def reverse_transfer
-    
+    if 
 
 end
