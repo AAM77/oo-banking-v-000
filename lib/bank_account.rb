@@ -20,4 +20,6 @@ class BankAccount
     true if user.status == "open" && user.balance > 0
   end
 
+  
+
 end
