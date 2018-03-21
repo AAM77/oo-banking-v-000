@@ -20,6 +20,8 @@ class BankAccount
     true if user.status == "open" && user.balance > 0
   end
 
-  
+  def close_account(user)
+    user.status = "closed"
+  end
 
 end
