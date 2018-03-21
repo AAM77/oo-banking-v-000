@@ -20,7 +20,7 @@ class Transfer
 
   def execute_transaction
 
-    if self.valid? == true
+    if @sender.valid? == true
 
       @receiver.deposit(amount)
       @sender.balance = @sender.balance - amount
