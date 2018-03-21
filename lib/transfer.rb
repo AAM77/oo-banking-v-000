@@ -17,6 +17,4 @@ class Transfer
       false
     end
 
-
-
 end
