@@ -22,7 +22,7 @@ class Transfer
 
     if self.status == "pending"
       if @sender.valid? == false
-
+        
         self.status = "Transaction rejected. Please check your account balance."
 
       else
