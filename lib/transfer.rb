@@ -27,6 +27,7 @@ class Transfer
       @sender.balance = @sender.balance - amount
 
       @status = "complete"
+    end
   end
 
 end
