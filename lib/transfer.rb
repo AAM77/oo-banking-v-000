@@ -18,6 +18,7 @@ class Transfer
         false
       end
     end
+  end
 
 
 
