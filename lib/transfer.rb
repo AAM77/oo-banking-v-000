@@ -22,6 +22,7 @@ class Transfer
 
     if sender.valid? == false
       "Transaction rejected. Please check your account balance."
+    else
     @receiver.deposit(amount)
     @sender.balance = @sender.balance - amount
 
