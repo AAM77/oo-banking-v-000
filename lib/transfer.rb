@@ -11,15 +11,12 @@ class Transfer
   end
 
   def valid?(sender, receiver)
-    if (sender.status == "open" && sender.balance > @amount)
-      if (self.status == "open" && self.balance > 0)
-        true
-      else
-        false
-      end
+    if sender.valid? == "true" && receiver.valid? == "true"
+      true
+    else
+      false
     end
-  end
 
-  
+
 
 end
