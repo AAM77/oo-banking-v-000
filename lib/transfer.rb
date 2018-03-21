@@ -34,5 +34,6 @@ class Transfer
     if self.status == "complete"
       @sender.deposit(amount)
       @receiver.balance = @receiver.balance - amount
+    end
 
 end
