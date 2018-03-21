@@ -19,7 +19,6 @@ class Transfer
   end
 
   def execute_transaction
-
     if @sender.valid? == true
 
       @receiver.deposit(amount)
