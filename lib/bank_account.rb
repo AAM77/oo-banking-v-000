@@ -8,4 +8,7 @@ class BankAccount
     @status = "open"
   end
 
+  def balance
+  end
+
 end
