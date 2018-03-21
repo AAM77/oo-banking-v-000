@@ -29,10 +29,9 @@ class Transfer
       end
 
     elsif self.status == "pending"
-      if self.
-
-      else
+      if @sender.valid? == false
         "Transaction rejected. Please check your account balance."
+        self.status == "rejected"
       end
     end
   end
