@@ -35,5 +35,4 @@ class Transfer
       @sender.deposit(amount)
       @receiver.balance = @receiver.balance - amount
     end
-
 end
