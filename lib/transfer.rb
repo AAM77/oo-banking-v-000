@@ -23,10 +23,10 @@ class Transfer
     if sender.valid? == false
       "Transaction rejected. Please check your account balance."
     else
-    @receiver.deposit(amount)
-    @sender.balance = @sender.balance - amount
+      @receiver.deposit(amount)
+      @sender.balance = @sender.balance - amount
 
-    @status = "complete"
+      @status = "complete"
   end
 
 end
