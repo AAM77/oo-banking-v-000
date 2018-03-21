@@ -1,7 +1,9 @@
 class Transfer
 
 
-  def initialize(user)
+  def initialize(sender)
+    @sender = sender
+  end
 
-  
+
 end
