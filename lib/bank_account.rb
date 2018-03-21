@@ -8,7 +8,7 @@ class BankAccount
     @status = "open"
   end
 
-  def deposit(ammount)
+  def deposit(amount)
     self.balance = self.balance + amount
   end
 
@@ -16,7 +16,7 @@ class BankAccount
     @balance
   end
 
-  def valid?
+  def valid?(user)
     true if self.status == "open" && self.balance > 0
   end
 
